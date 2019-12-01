@@ -1,0 +1,50 @@
+doraemon@nobita:~/android$ mka bacon -j8
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=10
+DORAEMON_VERSION=DoraemonOS-V1.0-Beta-20191130-2322-whyred-OFFICIAL
+TARGET_PRODUCT=doraemon_whyred
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv8-a
+TARGET_2ND_CPU_VARIANT=cortex-a73
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.3.0-1008-gcp-x86_64-Ubuntu-19.10
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=QD1A.190821.014
+OUT_DIR=/home/doraemon/android/out
+PRODUCT_SOONG_NAMESPACES=vendor/xiaomi/whyred device/xiaomi/whyred hardware/qcom-caf/msm8998
+============================================
+[100% 47/47] /home/doraemon/android/out/soong/.bootstrap/bin/soong_build /home/doraemon/android/out/soong/build.ninja
+FAILED: /home/doraemon/android/out/soong/build.ninja
+/home/doraemon/android/out/soong/.bootstrap/bin/soong_build -t -l /home/doraemon/android/out/.module_paths/Android.bp.list -b /home/doraemon/android/out/soong -n /home/doraemon/android/out -d /home/doraemon/android/out/soong/build.ninja.d -globFile /home/doraemon/android/out/soong/.bootstrap/build-globs.ninja -o /home/doraemon/android/out/soong/build.ninja Android.bp
+error: art/build/apex/Android.bp:178:1: module "com.android.runtime.key" variant "android_common": source path "vendor/secure" does not exist
+error: art/build/apex/Android.bp:178:1: module "com.android.runtime.key" variant "android_common": source path "vendor/secure" does not exist
+error: system/apex/apexd/apexd_testdata/Android.bp:94:1: module "com.android.apex.test_package.no_inst_key.key" variant "android_common": source path "vendor/secure" does not exist
+error: system/apex/apexd/apexd_testdata/Android.bp:94:1: module "com.android.apex.test_package.no_inst_key.key" variant "android_common": source path "vendor/secure" does not exist
+error: system/apex/apexd/apexd_testdata/Android.bp:18:1: module "com.android.apex.test_package.key" variant "android_common": source path "vendor/secure" does not exist
+error: system/apex/apexd/apexd_testdata/Android.bp:18:1: module "com.android.apex.test_package.key" variant "android_common": source path "vendor/secure" does not exist
+error: external/conscrypt/apex/Android.bp:31:1: module "apex.conscrypt.key" variant "android_common": source path "vendor/secure" does not exist
+error: external/conscrypt/apex/Android.bp:31:1: module "apex.conscrypt.key" variant "android_common": source path "vendor/secure" does not exist
+error: system/apex/apexd/apexd_testdata/Android.bp:43:1: module "com.android.apex.test_package.preinstall.key" variant "android_common": source path "vendor/secure" does not exist
+error: system/apex/apexd/apexd_testdata/Android.bp:43:1: module "com.android.apex.test_package.preinstall.key" variant "android_common": source path "vendor/secure" does not exist
+error: system/apex/tests/Android.bp:141:1: module "apex.test.key" variant "android_common": source path "vendor/secure" does not exist
+error: system/apex/tests/Android.bp:141:1: module "apex.test.key" variant "android_common": source path "vendor/secure" does not exist
+error: frameworks/av/apex/Android.bp:101:1: module "com.android.media.key" variant "android_common": source path "vendor/secure" does not exist
+error: frameworks/av/apex/Android.bp:101:1: module "com.android.media.key" variant "android_common": source path "vendor/secure" does not exist
+error: frameworks/native/opengl/tests/testViewport/Android.bp:5:1: module "TestViewport" variant "android_common": source path "vendor/secure/releasekey.x509.pem" does not exist
+error: frameworks/native/opengl/tests/testViewport/Android.bp:5:1: module "TestViewport" variant "android_common": source path "vendor/secure/releasekey.pk8" does not exist
+06:23:04 soong bootstrap failed with: exit status 1
+
+#### failed to build some targets (24 seconds) ####
+
+doraemon@nobita:~/android$
